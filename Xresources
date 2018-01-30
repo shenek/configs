@@ -1,0 +1,41 @@
+! unicode rxvt ##
+URxvt*background: black
+URxvt*foreground: white
+URxvt*color0: black
+URxvt*color1: red3
+URxvt*color2: green3
+URxvt*color3: yellow3
+URxvt*color4: blue2
+URxvt*color5: magenta3
+URxvt*color6: cyan3
+URxvt*color7: gray90
+URxvt*color8: grey50
+URxvt*color9: red
+URxvt*color10: green
+URxvt*color11: yellow
+!URxvt*color12: blue
+URxvt*color12: rgb:5c/5c/ff
+URxvt*color13: magenta
+URxvt*color14: cyan
+URxvt*color15: white
+URxvt*saveLines: 4096
+! scrollbar style - rxvt (default), plain (most compact), next, or xterm
+!URxvt.scrollstyle: plain
+URxvt.scrollBar: false
+! do not scroll with output
+URxvt*scrollTtyOutput: false
+! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
+URxvt*scrollWithBuffer: true
+! scroll back to the bottom on keypress
+URxvt*scrollTtyKeypress: true
+! Disable scrollback for secondary screens
+URxvt*secondaryScreen: 1
+URxvt*secondaryScroll: 0
+! Font
+URxvt*font: xft:DejaVu Sans Mono:size=11
+URxvt.letterSpace: -1
+URxvt*perl-ext-common:  default,clipboard,font-size
+URxvt.keysym.C-Up: perl:font-size:increase
+URxvt.keysym.C-Down: perl:font-size:decrease
+
+URxvt*iso14755: False
