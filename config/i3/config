@@ -33,7 +33,7 @@ floating_modifier $mod
 bindsym $mod+Return exec ~/.config/i3/scripts/new_shell.sh
 
 # kill focused window
-bindsym $mod+Shift+q kill
+bindsym $mod+q kill
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
@@ -157,3 +157,16 @@ bar {
 
 # focus stop follows mouse
 focus_follows_mouse no
+
+# System mode
+set $mode_system System (l) lock, (e) logout, (r) reboot, (Shift+s) shutdown
+mode "$mode_system" {
+        bindsym l exec --no-startup-id i3lock -c 000000 && sleep 1 && xset dpms force off, mode "default"
+        bindsym e exec --no-startup-id i3-msg exit, mode "default"
+        bindsym r exec --no-startup-id sudo reboot, mode "default"
+        bindsym Shift+s exec --no-startup-id sudo shutdown, mode "default"
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+bindsym $mod+Shift+q mode "$mode_system"
