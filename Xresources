@@ -39,3 +39,7 @@ URxvt.keysym.C-Up: perl:font-size:increase
 URxvt.keysym.C-Down: perl:font-size:decrease
 
 URxvt*iso14755: False
+
+! pastebin
+URxvt*clipboard*copycmd:  xsel -ib
+URxvt*clipboard*pastecmd: xsel -ob
