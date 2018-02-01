@@ -1,23 +1,42 @@
-! unicode rxvt ##
-URxvt*background: black
-URxvt*foreground: white
-URxvt*color0: black
-URxvt*color1: red3
-URxvt*color2: green3
-URxvt*color3: yellow3
-URxvt*color4: blue2
-URxvt*color5: magenta3
-URxvt*color6: cyan3
-URxvt*color7: gray90
-URxvt*color8: grey50
-URxvt*color9: red
-URxvt*color10: green
-URxvt*color11: yellow
-!URxvt*color12: blue
-URxvt*color12: rgb:5c/5c/ff
-URxvt*color13: magenta
-URxvt*color14: cyan
-URxvt*color15: white
+! Zenburn color-scheme
+URxvt.background              :#1f1f1f
+URxvt.foreground              :#dcdccc
+
+! black + red
+!URxvt.color0                 :#3f3f3f
+URxvt.color0                  :#1f1f1f
+URxvt.color1                  :#705050
+
+! green + yellow
+URxvt.color2                  :#60b48a
+URxvt.color3                  :#dfaf8f
+
+! blue + purple
+URxvt.color4                  :#506070
+URxvt.color5                  :#dc8cc3
+
+! cyan + white
+URxvt.color6                  :#8cd0d3
+URxvt.color7                  :#dcdccc
+
+! bright-black + bright-red
+URxvt.color8                  :#709080
+URxvt.color9                  :#dca3a3
+
+! bright-green + bright-yellow
+URxvt.color10                 :#c3bf9f
+URxvt.color11                 :#f0dfaf
+
+! bright-blue + bright-purple
+URxvt.color12                 :#94bff3
+URxvt.color13                 :#ec93d3
+
+! bright-cyan + bright-white
+URxvt.color14                 :#93e0e3
+URxvt.color15                 :#ffffff
+
+
+!! lines
 URxvt*saveLines: 4096
 ! scrollbar style - rxvt (default), plain (most compact), next, or xterm
 !URxvt.scrollstyle: plain
