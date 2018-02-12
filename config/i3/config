@@ -166,7 +166,7 @@ mode "$mode_system" {
         bindsym l exec --no-startup-id i3lock -c 000000 && sleep 1 && xset dpms force off, mode "default"
         bindsym e exec --no-startup-id i3-msg exit, mode "default"
         bindsym r exec --no-startup-id sudo reboot, mode "default"
-        bindsym Shift+s exec --no-startup-id sudo shutdown, mode "default"
+        bindsym Shift+s exec --no-startup-id sudo shutdown -h now, mode "default"
 
         bindsym Return mode "default"
         bindsym Escape mode "default"
