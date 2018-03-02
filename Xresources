@@ -53,7 +53,7 @@ URxvt*secondaryScroll: 0
 ! Font
 URxvt*font: xft:DejaVu Sans Mono:size=11
 URxvt.letterSpace: -1
-URxvt*perl-ext-common:  default,clipboard,font-size
+URxvt*perl-ext-common:  default,font-size
 URxvt.keysym.C-Up: perl:font-size:increase
 URxvt.keysym.C-Down: perl:font-size:decrease
 
