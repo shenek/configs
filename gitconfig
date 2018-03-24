@@ -1,0 +1,25 @@
+[user]
+	name = Stepan Henek
+	#email = stepan.henek@seznam.cz
+	email = stepan.henek@nic.cz
+	signingkey = 647EB8F2
+[core]
+	editor = vim
+[merge]
+	tool = vimdiff
+
+[color]
+    diff = auto
+    branch = auto
+    status = auto
+    interactive = auto
+[push]
+	default = matching
+[log]
+	decorate = true
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg2
+[alias]
+	graph = log --graph --oneline --all
