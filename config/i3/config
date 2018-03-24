@@ -198,6 +198,9 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute 1 toggle # m
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
 
+# propper quick lock
+bindsym XF86ScreenSaver exec --no-startup-id i3lock -c 000000 && sleep 1 && xset dpms force off
+
 # Touchpad controls
 #bindsym XF86TouchpadToggle exec /some/path/toggletouchpad.sh # toggle touchpad
 
@@ -219,3 +222,5 @@ exec --no-startup-id i3-msg 'workspace mail; exec /usr/bin/thunderbird'
 exec --no-startup-id i3-msg 'workspace web; exec /usr/bin/firefox; [class="Firefox"] focus; layout tabbed; move up'
 
 exec --no-startup-id wicd-gtk -t
+
+exec --no-startup-id i3lock -c 000000
