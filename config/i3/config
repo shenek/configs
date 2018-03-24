@@ -154,7 +154,7 @@ bindsym $mod+r mode "resize"
 bar {
         position top
         status_command py3status -c ~/.config/i3/i3status.conf
-        tray_output DP-1
+        tray_output LVDS-1
 }
 
 # focus stop follows mouse
@@ -175,20 +175,46 @@ bindsym $mod+Shift+q mode "$mode_system"
 
 
 # assing workspaces
-workspace 1 output DP-2
-workspace 2 output DP-2
-workspace 3 output DP-2
-workspace 4 output DP-2
-workspace mail output DP-1
-workspace web output DP-1
-workspace im output DP-1
-workspace 8 output DP-2
-workspace 9 output DP-2
-workspace 10 output DP-2
+workspace 1 output LVDS-1
+workspace 2 output LVDS-1
+workspace 3 output LVDS-1
+workspace 4 output LVDS-1
+workspace mail output LVDS-1
+workspace web output LVDS-1
+workspace im output LVDS-1
+workspace 8 output LVDS-1
+workspace 9 output LVDS-1
+workspace 10 output LVDS-1
 
 assign [class="Gajim"] im
+
+# Pulse Audio controls
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute 1 toggle # mute mic
+
+# Sreen brightness controls
+bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
+
+# Touchpad controls
+#bindsym XF86TouchpadToggle exec /some/path/toggletouchpad.sh # toggle touchpad
+
+# Media player controls
+#bindsym XF86AudioPlay exec playerctl play
+#bindsym XF86AudioPause exec playerctl pause
+#bindsym XF86AudioNext exec playerctl next
+#bindsym XF86AudioPrev exec playerctl previous
+#
+
+# update language immediately
+bindcode Shift+50 exec killall -USR1 py3status
+bindcode Shift+62 exec killall -USR1 py3status
+
 
 # initial setup
 exec --no-startup-id i3-msg 'workspace mail; exec /usr/bin/thunderbird'
 exec --no-startup-id i3-msg 'workspace im; exec /usr/bin/gajim'
 exec --no-startup-id i3-msg 'workspace web; exec /usr/bin/firefox; [class="Firefox"] focus; layout tabbed; move up'
+exec --no-startup-id wicd-gtk -t
