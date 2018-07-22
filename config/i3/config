@@ -244,3 +244,5 @@ exec --no-startup-id i3-msg 'workspace web; exec /usr/bin/firefox; [class="Firef
 exec --no-startup-id wicd-gtk -t
 
 exec --no-startup-id i3lock -c 000000 -i ~/.config/i3/images/lockscreen.png
+
+exec --no-startup-id feh --randomize --bg-fill ~/.config/i3/images/backgrounds/*
