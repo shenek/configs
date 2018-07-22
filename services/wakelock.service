@@ -7,7 +7,7 @@ Description=Lock the screen on resume from suspend
 User=stepan
 Type=forking
 Environment=DISPLAY=:0
-ExecStart=/usr/bin/i3lock -c 000000
+ExecStart=/usr/bin/i3lock -c 000000 -i /home/stepan/.config/i3/images/lockscreen.png
 
 [Install]
 WantedBy=sleep.target
