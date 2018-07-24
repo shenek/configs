@@ -163,7 +163,7 @@ focus_follows_mouse no
 # System mode
 set $mode_system System (l) lock, (e) logout, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
-        bindsym l exec --no-startup-id i3lock -c 000000 && sleep 1 && xset dpms force off, mode "default"
+        bindsym l exec --no-startup-id i3lock -c 000000 -i ~/.config/i3/images/lockscreen.png && sleep 1 && xset dpms force off, mode "default"
         bindsym e exec --no-startup-id i3-msg exit, mode "default"
         bindsym r exec --no-startup-id sudo reboot, mode "default"
         bindsym Shift+s exec --no-startup-id sudo shutdown -h now, mode "default"
