@@ -1,0 +1,34 @@
+[user]
+	name = Stepan Henek
+	email = stepan.henek@nic.cz
+
+[core]
+	editor = vim
+	excludesfile = /home/stepan/.gitignore
+
+[color]
+	ui = auto
+
+[push]
+	default = simple
+
+[commit]
+	gpgsign = True
+	verbose = true
+
+[diff "odf"]
+	textconv=odt2txt
+
+[diff "fodf"]
+	textconv=odt2txt --raw-input
+
+[log]
+	decorate = full
+
+[gpg]
+	program = /usr/bin/gpg2
+[diff]
+	indentHeuristic = true
+[alias]
+	graph = log --graph --oneline --all
+	versiontag = tag -s -m ""
