@@ -5,21 +5,33 @@
 	signingkey = 647EB8F2
 [core]
 	editor = vim
+	excludesfile = /home/stepan/.gitignore
 [merge]
 	tool = vimdiff
 
 [color]
-    diff = auto
-    branch = auto
-    status = auto
-    interactive = auto
+	ui = auto
+	diff = auto
+	branch = auto
+	status = auto
+	interactive = auto
 [push]
 	default = matching
+[diff "odf"]
+	textconv=odt2txt
+
+[diff "fodf"]
+	textconv=odt2txt --raw-input
+
 [log]
-	decorate = true
+	decorate = full
 [commit]
 	gpgsign = true
+	verbose = true
+[diff]
+	indentHeuristic = true
 [gpg]
 	program = gpg2
 [alias]
 	graph = log --graph --oneline --all
+	versiontag = "! awk '/^'$(git describe --tags --abbrev=0 | sed -e 's/^v//' -e 's/^package-v//')' / { exit } {print $0 }' CHANGELOG.rst | git tag -s -F -"
