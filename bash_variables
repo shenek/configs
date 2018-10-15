@@ -8,8 +8,8 @@ export WORKON_HOME=$HOME/.virtualenvs
 source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
 
 # update path
-export PATH="${PATH}:/usr/local/sbin/"
-export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:/usr/local/lib"
+export PATH="${PATH}:/usr/local/sbin/:~/.local/bin/"
+export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:/usr/local/lib:~/.local/lib/"
 
 # stderred
 export LD_PRELOAD="/home/stepan/customs/stderred/build/libstderred.so${LD_PRELOAD:+:$LD_PRELOAD}"
