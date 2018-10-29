@@ -25,6 +25,9 @@
 [log]
 	decorate = full
 
+[fetch]
+	prune = true
+
 [gpg]
 	program = /usr/bin/gpg2
 [diff]
