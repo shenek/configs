@@ -25,9 +25,14 @@
 
 [log]
 	decorate = full
+
 [commit]
 	gpgsign = true
 	verbose = true
+
+[fetch]
+	prune = true
+
 [diff]
 	indentHeuristic = true
 [gpg]
