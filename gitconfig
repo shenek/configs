@@ -16,7 +16,7 @@
 	status = auto
 	interactive = auto
 [push]
-	default = matching
+	default = current
 [diff "odf"]
 	textconv=odt2txt
 
