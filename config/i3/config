@@ -173,6 +173,9 @@ mode "$mode_system" {
 }
 bindsym $mod+Shift+q mode "$mode_system"
 
+# update language immediately
+bindcode Shift+50 exec killall -USR1 py3status
+bindcode Shift+62 exec killall -USR1 py3status
 
 # assing workspaces
 workspace 1 output DP-2
