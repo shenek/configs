@@ -193,6 +193,6 @@ assign [class="Gajim"] im
 
 # initial setup
 exec --no-startup-id i3-msg 'workspace mail; exec /usr/bin/thunderbird'
-exec --no-startup-id i3-msg 'workspace im; exec ~/customs/Rambox-0.6.3-linux-x64/rambox; exec /usr/bin/gajim'
+exec --no-startup-id i3-msg 'workspace im; exec ~/customs/rambox-latest/rambox; exec /usr/bin/gajim'
 exec --no-startup-id i3-msg 'workspace web; exec /usr/bin/firefox; [class="Firefox"] focus; layout tabbed; move up'
 exec --no-startup-id feh --randomize --bg-fill ~/.config/i3/images/backgrounds/*
