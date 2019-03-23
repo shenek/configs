@@ -51,8 +51,8 @@ URxvt*scrollTtyKeypress: true
 URxvt*secondaryScreen: 1
 URxvt*secondaryScroll: 0
 ! Font
-URxvt*font: xft:DejaVu Sans Mono:size=11
-URxvt.letterSpace: -1
+URxvt.font: xft:Ubuntu Mono:pixelsize=16:antialias=true:style=Bold, xft:Symbola:pixelsize=10:antialias=true,xft:FontAwesome:pixelsize=10:antialias=true, xft:PowerlineSymbols:pixelsize=10:antialias=true
+#URxvt.letterSpace:-1
 URxvt*perl-ext-common:  default,font-size
 URxvt.keysym.C-Up: perl:font-size:increase
 URxvt.keysym.C-Down: perl:font-size:decrease
