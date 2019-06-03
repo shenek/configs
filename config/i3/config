@@ -175,16 +175,16 @@ bindsym $mod+Shift+q mode "$mode_system"
 
 
 # assing workspaces
-workspace 1 output LVDS-1
-workspace 2 output LVDS-1
-workspace 3 output LVDS-1
-workspace 4 output LVDS-1
+workspace 1 output HDMI-1 LVDS-1
+workspace 2 output HDMI-1 LVDS-1
+workspace 3 output HDMI-1 LVDS-1
+workspace 4 output HDMI-1 LVDS-1
 workspace mail output LVDS-1
 workspace web output LVDS-1
 workspace im output LVDS-1
-workspace 8 output LVDS-1
-workspace 9 output LVDS-1
-workspace 10 output LVDS-1
+workspace 8 output HDMI-1 LVDS-1
+workspace 9 output HDMI-1 LVDS-1
+workspace 10 output HDMI-1 LVDS-1
 
 assign [class="Gajim"] im
 
