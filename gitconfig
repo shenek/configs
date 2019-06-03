@@ -1,7 +1,8 @@
 [user]
 	name = Stepan Henek
 	#email = stepan.henek@seznam.cz
-	email = stepan.henek@nic.cz
+	#email = stepan.henek@nic.cz
+	email = stepan@henek.name
 	signingkey = 647EB8F2
 [core]
 	editor = vim
