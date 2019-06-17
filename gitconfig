@@ -4,6 +4,7 @@
 	#email = stepan.henek@nic.cz
 	#email = stepan@henek.name
 	signingkey = 647EB8F2
+	useConfigOnly = true
 [core]
 	editor = vim
 	excludesfile = /home/stepan/.gitignore
