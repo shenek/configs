@@ -1,6 +1,6 @@
 [user]
 	name = Stepan Henek
-	email = stepan.henek@nic.cz
+	email = stepan@angelcam.com
 
 [core]
 	editor = vim
@@ -29,7 +29,7 @@
 	prune = true
 
 [gpg]
-	program = /usr/bin/gpg2
+	program = /usr/bin/gpg
 [diff]
 	indentHeuristic = true
 [alias]
