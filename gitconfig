@@ -1,6 +1,7 @@
 [user]
 	name = Stepan Henek
 	email = stepan@angelcam.com
+	signingkey = 647EB8F2
 
 [core]
 	editor = vim
