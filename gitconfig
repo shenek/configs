@@ -3,6 +3,7 @@
 	#email = stepan.henek@seznam.cz
 	#email = stepan.henek@nic.cz
 	#email = stepan@henek.name
+	email = stepan.henek@ceskatelevize.cz
 	signingkey = 647EB8F2
 	useConfigOnly = true
 [core]
