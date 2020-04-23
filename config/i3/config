@@ -203,7 +203,7 @@ exec --no-startup-id i3-msg 'workspace web; exec /usr/bin/firefox; [class="Firef
 exec --no-startup-id feh --randomize --bg-fill ~/.config/i3/images/backgrounds/*
 
 exec --no-startup-id wicd-gtk -t
-exec --no-startup-id xrandr --output DisplayPort-0 --mode 1920x1080 --rate 60
-exec --no-startup-id xrandr --output HDMI-A-0 --mode 1920x1080 --rate 60
+exec --no-startup-id xrandr --output DisplayPort-0 --mode 1920x1200 --rate 60
+exec --no-startup-id xrandr --output HDMI-A-0 --mode 1920x1200 --rate 60
 exec --no-startup-id xrandr --output HDMI-A-0 --primary
 exec --no-startup-id xrandr --output DisplayPort-0 --left-of HDMI-A-0
