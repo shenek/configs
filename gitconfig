@@ -36,3 +36,5 @@
 [alias]
 	graph = log --graph --oneline --all
 	versiontag = "! awk '/'$(git describe --tags --abbrev=0 | sed -e 's/^v//' -e 's/^package-v//')' / { exit } {print $0 }' CHANGELOG.rst | git tag -s -F -"
+[pull]
+	ff = only
