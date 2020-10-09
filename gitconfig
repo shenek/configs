@@ -8,6 +8,7 @@
 [core]
 	editor = vim
 	excludesfile = /home/stepan/.gitignore
+	pager = delta --dark
 [merge]
 	tool = vimdiff
 
@@ -42,3 +43,5 @@
 [alias]
 	graph = log --graph --oneline --all
 	versiontag = "! cat CHANGELOG.rst CHANGELOG.md 2>/dev/null | awk '/^'$(git describe --tags --abbrev=0 | sed -e 's/^v//' -e 's/^package-v//' || echo EOF)' / { exit } { print $0 }' | git tag -s -F -"
+[pull]
+	ff = only
