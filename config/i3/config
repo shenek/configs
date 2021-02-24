@@ -237,7 +237,6 @@ bindcode Shift+62 exec killall -USR1 py3status
 
 
 # initial setup
-exec --no-startup-id i3-msg 'workspace im; exec /usr/bin/gajim; exec /opt/Rambox/rambox'
 exec --no-startup-id i3-msg 'workspace mail; exec /usr/bin/thunderbird'
 exec --no-startup-id i3-msg 'workspace web; exec /usr/bin/firefox; [class="Firefox"] focus child; layout tabbed; move up'
 
