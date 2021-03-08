@@ -5,23 +5,23 @@ dynamic_title: true
 font:
   # The normal (roman) font face to use.
   normal:
-    family: Ubuntu Mono
+    family: League Mono
     # Style can be specified to pick a specific face.
-    style: Regular
+    style: Narrow Medium
 
   # The bold font face
   bold:
-    family: Ubuntu Mono
+    family: League Mono
     # Style can be specified to pick a specific face.
-    style: Bold
+    style: Narrow Bold
 
   # The italic font face
   italic:
-    family: Ubuntu Mono
+    family: League Mono
     # Style can be specified to pick a specific face.
-    style: Italic
+    style: Narrow Light
 
-  size: 10.0
+  size: 9.0
 
 # Colors (Gruvbox dark)
 colors:
