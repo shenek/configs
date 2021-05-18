@@ -27,3 +27,6 @@ staged = "[✚ ${count}](bold green)"
 renamed = "[≫ ${count}](bold yellow)"
 deleted = "[✖ ${count}](bold bright-red)"
 conflicted = "[❗${count}](bold red)"
+
+[git_branch]
+truncation_length = 15
