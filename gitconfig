@@ -39,7 +39,7 @@
 [diff]
 	indentHeuristic = true
 [gpg]
-	program = gpg2
+	program = gpg
 [alias]
 	graph = log --graph --oneline --all
 	versiontag = "! ~/configs/scripts/git_version_tag.sh | git tag --cleanup=whitespace -s -F -"
