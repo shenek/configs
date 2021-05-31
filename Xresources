@@ -107,3 +107,6 @@ URxvt*iso14755: False
 ! pastebin
 URxvt*clipboard*copycmd:  xsel -ib
 URxvt*clipboard*pastecmd: xsel -ob
+
+! fix DPI
+Xft.dpi: 120
