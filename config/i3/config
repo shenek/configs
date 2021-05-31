@@ -156,7 +156,7 @@ bar {
     status_command py3status -c ~/.config/i3/i3status.conf
     #status_command ~/.local/bin/i3status-rs ~/.config/i3status-rust/config.toml 
 
-    tray_output LVDS-1
+    tray_output eDP-1
     font pango: League Mono Narrow SemiBold, FontAwesome 11 
     colors {
         separator #666666
