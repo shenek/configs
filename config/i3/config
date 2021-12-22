@@ -228,12 +228,12 @@ bindsym XF86ScreenSaver exec --no-startup-id i3lock -i ~/.config/i3/images/locks
 # Set the shortcuts and what they do
 set $mode_display Ext Screen (v/V) VGA ON/OFF, (h/H) HDMI ON/OFF, (d/D) DP ON/OFF
 mode "$mode_display" {
-    bindsym v exec --no-startup-id xrandr --output VGA-1 --auto --right-of LVDS-1, mode "default"
-    bindsym h exec --no-startup-id xrandr --output HDMI-1 --auto --right-of LVDS-1, mode "default"
-    bindsym d exec --no-startup-id xrandr --output DP-1 --auto --right-of LVDS-1, mode "default"
+    bindsym v exec --no-startup-id xrandr --output VGA-1 --auto --right-of eDP-1, mode "default"
+    bindsym h exec --no-startup-id xrandr --output HDMI-2 --auto --right-of eDP-1, mode "default"
+    bindsym d exec --no-startup-id xrandr --output DP-1 --auto --right-of eDP-1, mode "default"
 
     bindsym Shift+v exec --no-startup-id xrandr --output VGA-1 --auto --off, mode "default"
-    bindsym Shift+h exec --no-startup-id xrandr --output HDMI-1 --auto --off, mode "default"
+    bindsym Shift+h exec --no-startup-id xrandr --output HDMI-2 --auto --off, mode "default"
     bindsym Shift+d exec --no-startup-id xrandr --output DP-1 --auto --off, mode "default"
 
     # back to normal: Enter or Escape
