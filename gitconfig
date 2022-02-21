@@ -8,9 +8,12 @@
 [core]
 	editor = vim
 	excludesfile = /home/stepan/.gitignore
-	pager = delta --dark
+	pager = delta --syntax-theme gruvbox-dark
 [merge]
 	tool = vimdiff
+
+[delta]
+	navigate = true
 
 [color]
 	ui = auto
