@@ -22,3 +22,6 @@ export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 
 # bat configuration
 export BAT_THEME=gruvbox
+
+# Force poetry to disable keyring
+export PYTHON_KEYRING_BACKEND=keyring.backends.fail.Keyring
