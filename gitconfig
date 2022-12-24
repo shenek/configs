@@ -48,3 +48,5 @@
 	versiontag = "! ~/configs/scripts/git_version_tag.sh | git tag --cleanup=whitespace -s -F -"
 [pull]
 	ff = only
+[init]
+	defaultBranch = master
