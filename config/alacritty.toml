@@ -11,6 +11,12 @@ red = "#fb4934"
 white = "#ebdbb2"
 yellow = "#fabd2f"
 
+[colors.primary]
+# hard contrast: background = '#1d2021'
+background = '#282828'
+# soft contrast: background = '#32302f'
+foreground = '#ebdbb2'
+
 [colors.normal]
 black = "#282828"
 blue = "#83a598"
