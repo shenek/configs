@@ -99,7 +99,7 @@ bindsym $mod+3 workspace 3
 bindsym $mod+4 workspace 4
 bindsym $mod+5 workspace web
 bindsym $mod+6 workspace mail
-bindsym $mod+7 workspace im
+bindsym $mod+7 workspace ide
 bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
@@ -111,7 +111,7 @@ bindsym $mod+Shift+3 move container to workspace 3
 bindsym $mod+Shift+4 move container to workspace 4
 bindsym $mod+Shift+5 move container to workspace web
 bindsym $mod+Shift+6 move container to workspace mail
-bindsym $mod+Shift+7 move container to workspace im
+bindsym $mod+Shift+7 move container to workspace ide
 bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
@@ -193,12 +193,12 @@ workspace 3 output VGA-1 HDMI-1 LVDS-1
 workspace 4 output VGA-1 HDMI-1 LVDS-1
 workspace mail output LVDS-1
 workspace web output LVDS-1
-workspace im output LVDS-1
+workspace ide output LVDS-1
 workspace 8 output VGA-1 HDMI-1 LVDS-1
 workspace 9 output VGA-1 HDMI-1 LVDS-1
 workspace 10 output VGA-1 HDMI-1 LVDS-1
 
-assign [class="Gajim"] im
+assign [class="Zed"] ide
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
