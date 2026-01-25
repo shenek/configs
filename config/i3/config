@@ -156,7 +156,7 @@ bar {
     status_command py3status -c ~/.config/i3/i3status.conf
     #status_command ~/.local/bin/i3status-rs ~/.config/i3status-rust/config.toml 
 
-    tray_output eDP-1
+    tray_output eDP
     font pango: League Mono Narrow SemiBold, FontAwesome 11 
     colors {
         separator #666666
@@ -201,10 +201,10 @@ workspace 10 output VGA-1 HDMI-1 LVDS-1
 assign [class="Zed"] ide
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
-bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute 1 toggle # mute mic
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 8 +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 8 -5% #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 8 toggle # mute sound
+bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute 5 toggle # mute mic
 
 # Sreen brightness controls
 bindsym XF86MonBrightnessUp exec sudo brightnessctl set +10% # increase screen brightness
@@ -226,17 +226,25 @@ bindsym XF86ScreenSaver exec --no-startup-id i3lock -i ~/.config/i3/images/locks
 
 ## Manual management of external displays
 # Set the shortcuts and what they do
-set $mode_display Ext Screen (v/V) VGA ON/OFF, (h/H) HDMI ON/OFF, (d/D) DP ON/OFF (f/F) DP2 ON/OFF
+set $mode_display Ext Screen (0-9/shift+0-9) DP0-9 ON/OFF, (h/H) HDMI ON/OFF
 mode "$mode_display" {
-    bindsym v exec --no-startup-id xrandr --output VGA-1 --auto --right-of eDP-1, mode "default"
-    bindsym h exec --no-startup-id xrandr --output HDMI-2 --auto --right-of eDP-1, mode "default"
-    bindsym d exec --no-startup-id xrandr --output DP-1 --auto --right-of eDP-1, mode "default"
-    bindsym f exec --no-startup-id xrandr --output DP-2-1 --auto --above eDP-1, mode "default"
+    bindsym 0 exec --no-startup-id xrandr --output DisplayPort-0  --auto --above eDP, mode "default"
+    bindsym 1 exec --no-startup-id xrandr --output DisplayPort-1  --auto --left-of DisplayPort-0 --above eDP, mode "default"
+    bindsym 2 exec --no-startup-id xrandr --output DisplayPort-2  --auto --left-of DisplayPort-1 --above eDP, mode "default"
+    bindsym 3 exec --no-startup-id xrandr --output DisplayPort-3  --auto --left-of DisplayPort-2 --above eDP, mode "default"
+    bindsym 4 exec --no-startup-id xrandr --output DisplayPort-4  --auto --left-of DisplayPort-3 --above eDP, mode "default"
+    bindsym 5 exec --no-startup-id xrandr --output DisplayPort-5  --auto --left-of DisplayPort-4 --above eDP, mode "default"
+    bindsym 6 exec --no-startup-id xrandr --output DisplayPort-6  --auto --left-of DisplayPort-5 --above eDP, mode "default"
+    bindsym h exec --no-startup-id xrandr --output HDMI-A-0 --auto, mode "default"
 
-    bindsym Shift+v exec --no-startup-id xrandr --output VGA-1 --auto --off, mode "default"
-    bindsym Shift+h exec --no-startup-id xrandr --output HDMI-2 --auto --off, mode "default"
-    bindsym Shift+d exec --no-startup-id xrandr --output DP-1 --auto --off, mode "default"
-    bindsym Shift+f exec --no-startup-id xrandr --output DP-2-1 --auto --off, mode "default"
+    bindsym Shift+0 exec --no-startup-id xrandr --output DisplayPort-0  --auto --off, mode "default"
+    bindsym Shift+1 exec --no-startup-id xrandr --output DisplayPort-1  --auto --off, mode "default"
+    bindsym Shift+2 exec --no-startup-id xrandr --output DisplayPort-2  --auto --off, mode "default"
+    bindsym Shift+3 exec --no-startup-id xrandr --output DisplayPort-3  --auto --off, mode "default"
+    bindsym Shift+4 exec --no-startup-id xrandr --output DisplayPort-4  --auto --off, mode "default"
+    bindsym Shift+5 exec --no-startup-id xrandr --output DisplayPort-5  --auto --off, mode "default"
+    bindsym Shift+6 exec --no-startup-id xrandr --output DisplayPort-6  --auto --off, mode "default"
+    bindsym Shift+h exec --no-startup-id xrandr --output HDMI-A-0 --auto --off, mode "default"
 
     # back to normal: Enter or Escape
     bindsym Return mode "default"
