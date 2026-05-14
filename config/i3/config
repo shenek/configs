@@ -255,3 +255,7 @@ exec --no-startup-id nm-applet --sm-disable
 exec --no-startup-id i3lock -c 000000 -i ~/.config/i3/images/lockscreen.png
 
 exec --no-startup-id feh --randomize --bg-fill ~/.config/i3/images/backgrounds/*
+
+# keyboard switching
+exec_always --no-startup-id setxkbmap -layout "us,cz" -option "grp:shifts_toggle,terminate:ctrl_alt_bksp"
+
